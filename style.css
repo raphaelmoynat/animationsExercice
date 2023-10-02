@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    border: solid black 1px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+.keanu{
+
+    background-image: url("keanu-mirror.jpg");
+    background-size: cover;
+  
+}
+
+
+
+.middle{
+
+    background-image: url("2.jpg");
+    background-size: cover;
+
+    
+    
+}
+
+
+.leo{
+    background-image: url("leo.jpg");
+    background-size:cover;
+    border-radius: 100px;
+}
+
+
+.feu{
+    background-image: url("feu.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width : 100px;
+
+}
+.voiture{
+    background-image: url("voiture.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width : 1200px;
+
+}
+
+
+.container2{
+    display:flex;
+    flex-wrap:wrap; 
+}

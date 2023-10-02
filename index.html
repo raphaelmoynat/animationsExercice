@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Animations</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            border: solid black 1px;
+            margin-left: 20px;
+            border-radius: 20px;
+
+        }
+        .keanu{
+
+            background-image: url("keanu-mirror.jpg");
+            background-size: cover;
+            transition: 2s ease-in-out;
+        }
+
+        .keanu:hover{
+            
+            transform: scale(3,3);
+            background-image: url("keanu-government.png");
+        }
+
+        .middle{
+
+            background-image: url("2.jpg");
+            background-size: cover;
+            transition: 1s ease-in-out;
+            filter:grayscale(100%);
+            
+            
+        }
+        .middle:hover{
+
+            transform: translate(0px, -200px) rotate(180deg);
+            filter: grayscale(0%);
+        }
+
+        .leo{
+            background-image: url("leo.jpg");
+            background-size:cover;
+            filter : grayscale(100%);
+            transition: 2s;
+            border-radius: 100px;
+        }
+
+        .leo:hover{
+            filter: grayscale(0%);
+            border-radius: 20px;
+            
+
+        }
+        .feu{
+            background-image: url("feu.png");
+            background-size:contain;
+            background-repeat: no-repeat;
+            height: 150px;
+            width : 100px;
+            transform: scaleX(-1);
+        }
+        .voiture{
+            background-image: url("voiture.png");
+            background-size:contain;
+            background-repeat: no-repeat;
+            height: 150px;
+            width : 1200px;
+            transition: 4s;
+        }
+        .voiture:hover{
+            transform: translate(900px, 0px);        
+            
+            }
+
+        .container2{
+            display:flex;
+            flex-wrap:wrap; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="cube leo">
+
+        </div>
+
+        <div class="cube middle">
+
+        </div>
+
+        <div class="cube keanu">
+
+        </div>
+
+    </div>
+
+<div class="container2">
+
+<div class="voiture">
+
+
+
+    </div>
+    <div class="feu">
+
+    </div>
+
+</div>
+        
+    
+
+</body>
+
+</html>
